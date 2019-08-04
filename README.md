@@ -8,4 +8,4 @@ To Run the script type in 'python split_multi_fasta.py /path/to/fasta/file'
 ```
 ## Testing
 
-For testing purpose, there is a file in test folder with name test.fasta which has 4 sequences. For your better understanding, you can use test.fasta to know how this tool works.
+For testing purposes, there is a file in test folder with name test.fasta which has 4 sequences. For your better understanding, you can use test.fasta to know how this tool works.
