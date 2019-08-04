@@ -9,7 +9,8 @@ try:
 	    lines = lines[1:]
 	    lines=['>'+ seq for seq in lines]
 	    for name in lines:
-	        file_name=name.split('\n')[0][1:]  #Extracting sequence Id to use it for file name
+	    	#Extracting sequence Id to use it for file name
+	        file_name=name.split('\n')[0][1:]  
 	        out_file=open(file_path+"/"+file_name+".fasta", "w")
 	        out_file.write(name)
 	        out_file.close()
