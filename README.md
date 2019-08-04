@@ -6,6 +6,6 @@ Splitting one multi fasta file into multiple files with only one sequence each u
 ```bash
 To Run the script type in 'python split_multi_fasta.py /path/to/fasta/file'
 ```
-## Testing
+## Example
 
-For testing purpose, there is a file in test folder with name test.fasta which has 4 sequences. For your better understanding, you can use test.fasta to know how this tool works.
+For testing purpose, there is a file in example folder with name test.fasta which has 4 sequences. For your better understanding, you can use test.fasta to know how this tool works.
