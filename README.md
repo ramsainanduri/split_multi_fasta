@@ -1,6 +1,6 @@
 # Split Multi Fasta into Individual Files
 
-Splitting one multi fasta file into multiple files with only sequence each using the sequence IDs as file names.
+Splitting one multi fasta file into multiple files with only one sequence each using the sequence IDs as file names.
 
 ## Usage
 
