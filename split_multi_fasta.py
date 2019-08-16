@@ -1,7 +1,19 @@
 import os
 import sys
+import argparse
+
+#Developer Info
+print ("\n*********************************************************************************************************")
+print ("* Python script to split multi fasta file into individual file using sequence ids as file names\t\t*")
+print ("* Script Developed by\t:\tRam Sai Nanduri\t\t\t\t\t\t\t\t*")
+print ("*********************************************************************************************************")
+##Argument parser
+parser = argparse.ArgumentParser(description="Split multi fasta file into individual files using sequence ids as their file names.")
+parser.add_argument("-m", "--multifasta", metavar="multifasta", help="Input multi fasta file", type=str)
+parser.add_argument("-v", "--version", help="Program's version", action='version', version='%(prog)s 1.0')
+args = parser.parse_args()
 #Reading user inut file
-in_file = sys.argv[1]
+in_file = multifasta
 file_path = os.path.abspath(os.path.dirname(in_file))
 try:
 	with open(in_file, "r") as fa:
