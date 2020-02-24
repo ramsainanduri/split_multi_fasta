@@ -3,8 +3,8 @@
 Splitting one multi fasta file into multiple files with only one sequence each using the sequence IDs as file names.
 
 ## Usage
-```bash
-To Run the script type in 'python split_multi_fasta.py /path/to/fasta/file'
+```
+python split_multi_fasta.py /path/to/fasta/file
 ```
 ## Example
 
