@@ -13,7 +13,7 @@ parser.add_argument("-m", "--multifasta", metavar="multifasta", help="Input mult
 parser.add_argument("-v", "--version", help="Program's version", action='version', version='%(prog)s 1.0')
 args = parser.parse_args()
 #Reading user inut file
-in_file = multifasta
+in_file = args.multifasta
 file_path = os.path.abspath(os.path.dirname(in_file))
 try:
 	with open(in_file, "r") as fa:
@@ -26,6 +26,6 @@ try:
 	        out_file=open(file_path+"/"+file_name+".fasta", "w")
 	        out_file.write(name)
 	        out_file.close()
-	print ("\nSucessfully Split "+os.path.basename(in_file)+" into single fasta files")
+	print ("\nSucessfully splited "+os.path.basename(in_file)+" into single fasta files")
 except:
 	sys.exit("Opps..either file is not present or file format is not correct")
